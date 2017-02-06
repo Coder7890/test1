@@ -1,0 +1,23 @@
+<div class="show-posts-list">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="panel panel-info">
+        <div class="panel-heading">List of posts</div>
+          <div class="panel-body">
+            <div ng-repeat="post in posts" ng-click="showDetails(post.id)">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <span>Id: </span>
+                  <span ng-bind="post.id"></span>
+                 </li>
+                 <li class="list-group-item">
+                   <span>Title: </span>
+                   <span ng-bind="post.title"></span>
+                 </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

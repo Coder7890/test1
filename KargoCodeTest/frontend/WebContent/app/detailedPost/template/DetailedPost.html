@@ -1,0 +1,47 @@
+<div class="post-details">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-info">
+          <div class="panel-heading" ng-bind=" 'Post ' + (post.id) + ' details'"></div>
+            <div class="panel-body">
+              <ul>
+                <li ng-repeat="(key,value) in post" ng-bind = "(key | uppercase) + ': ' + (value)"></li>
+              </ul>
+              <div class="row">
+                <label> Tracker JSON </label>
+                <pre> {{trackerData | json }}></pre>
+              </div>
+<!--                 <div class="row">
+            <div class="col-md-12">
+                    <h3><p class="label label-info">Tracker hit data</p></h3>
+                    <p class="input-group">
+                        <span class="input-group-addon">from:</span>
+                        <input type="text" class="form-control" ng-model="data.fromDate" datepicker-popup="{{format}}"
+                               is-open="data.fromDatepickerOpened" close-text="Close" />
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default" ng-click="open('from')">
+                                <i class="glyphicon glyphicon-calendar"></i>
+                            </button>
+                        </span>
+                    </p>
+                    <p class="input-group">
+                        <span class="input-group-addon">to:</span>
+                        <input type="text" class="form-control" ng-model="data.toDate" datepicker-popup
+                               is-open="data.toDatepickerOpened" close-text="Close" />
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default" ng-click="open('to')">
+                                <i class="glyphicon glyphicon-calendar"></i>
+                            </button>
+                        </span>
+                    </p>
+                    <pre>{{ data.trackers | json }}</pre>
+                </div>
+        </div> -->
+        
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+.post-details .panel-heading {
+  text-align: center;
+}
+
+.post-details .panel-body li {
+  list-style-type:none;
+  padding-bottom: 10px;
+}
